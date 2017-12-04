@@ -1,0 +1,21 @@
+{
+  "name": "heroku-connect",
+  "scripts": {
+  },
+  "env": {
+    "PGSSLMODE": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "herokuconnect",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
